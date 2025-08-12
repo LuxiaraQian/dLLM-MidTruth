@@ -55,5 +55,10 @@ For commercial use, please contact [Chunhua Shen](mailto:chhshen@gmail.com).
 If you find this work useful, please consider citing:
 
 ```bibtex 
-todo
+@article{wang2025temporaldynamics,
+    title={Time Is a Feature: Exploiting Temporal Dynamics in Diffusion Language Models},
+    author={Wen, Wang and Bozhen, Fang and Chenchen, Jing and Yongliang, Shen and Yangyi, Shen and Qiuyu, Wang and Hao, Ouyang and Hao, Chen and Chunhua, Shen},
+    journal={arXiv preprint arXiv:},
+    year={2025}
+}
 ```
