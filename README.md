@@ -2,7 +2,7 @@
 
 
 
-# <img src="assets/logo.png" width="6%" alt="" align=center /> Time Is a Feature: Exploiting Temporal Dynamics in Diffusion Language Models
+# <img src="assets/logo.png" width="8%" alt="" align=center /> Time Is a Feature: Exploiting Temporal Dynamics in Diffusion Language Models
 
 [![Paper](https://img.shields.io/badge/Paper-Arxiv%20Link-green)](#)
 [![Project](https://img.shields.io/badge/Project-Page-blue)](https://aim-uofa.github.io/dLLM-MidTruth/)
@@ -11,20 +11,21 @@
 
 ## 📣 News
 
-## 🚀 Motivation
+- [2025-08-13] Paper Released!
 
-Diffusion large language models (dLLM) have recently emerged as a promising alternative to the auto-regressive (AR) large language models. However. current dLLMs typically adopt a decoding strategy that mirrors AR models: solely relying on the sequence predicted in the final denoising step as the final answer, and discarding all the intermediate predictions. This greedy decoding strategy ignores rich temporal dynamics that dLLMs possess in sampling process. 
+## 🚀 Overview
 
-In our analysis of two metrics for widely used mathematical benchmark datasets,  a consistent and significant discrepancy emerges between two key metrics. the first metric, final pass rate, measures the accuracy of the final output, while the second, ever-pass rate, captures how often a correct answer appears at any intermediate decoding step. This discrepancy highlights that correct predictions made during early iterations are frequently overwritten of lost in later stages. 
-
-This insight motivates our two complementary methods that leverage temporal dynamics:
-
-- **Temporal Majority Voting**: a test-time decoding strategy that aggregates predictions across sampling steps.
-- **Temporal Consistency Reinforcement**: a post-training approach designed to encourage stable and consistent generations.
-
-<div align="center">
-<img src="assets/temporal_oscillation.png"/>
+<div align="center" >
+<img src="assets/demo.png"/>
 </div>
+
+## 📖 Description
+
+Diffusion large language models (dLLMs) generate text through iterative denoising, yet current decoding strategies discard rich intermediate predictions in favor of the final output. Our work here reveals a critical phenomenon---<b>temporal oscillation</b>---where correct answers often emerge in the middle process, but are overwritten in later denoising steps.
+To address this issue, we introduce two complementary methods that exploit temporal consistency: 
+- **Temporal Self-Consistency Voting**, a training-free, test-time decoding strategy that aggregates predictions across denoising steps to select the most consistent output; 
+- **Temporal Consistency Reinforcement**, a post-training method that uses Temporal Semantic Entropy (TSE), a measure of semantic stability across intermediate predictions, as a reward signal to encourage stable generations. 
+
 
 <!-- ## Getting Started
 
@@ -41,8 +42,7 @@ todo: file structure
 ### Evaluation -->
 
 ## 🚩 Plan
-- [ ] paper release 
-- [ ] source code of temporal majority voting and evaluation
+- [ ] source code of temporal self-consistency voting and evaluation
 - [ ] source code of temporal consistency reinforcement
 
 ## 🎫 License
