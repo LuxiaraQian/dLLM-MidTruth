@@ -4,7 +4,7 @@
 
 # <img src="assets/logo.png" width="8%" alt="" align=center /> Time Is a Feature: Exploiting Temporal Dynamics in Diffusion Language Models
 
-[![Paper](https://img.shields.io/badge/Paper-Arxiv%20Link-green)](#)
+[![Paper](https://img.shields.io/badge/Paper-Arxiv%20Link-green)](https://arxiv.org/abs/2508.09138)
 [![Project](https://img.shields.io/badge/Project-Page-blue)](https://aim-uofa.github.io/dLLM-MidTruth/)
 [![Code](https://img.shields.io/badge/Code-GitHub-orange)](#)
 [![License](https://img.shields.io/badge/License-BSD%202--clause-lightgrey)](https://opensource.org/license/bsd-2-clause)
@@ -21,7 +21,7 @@
 
 ## 📖 Description
 
-Diffusion large language models (dLLMs) generate text through iterative denoising, yet current decoding strategies discard rich intermediate predictions in favor of the final output. Our work here reveals a critical phenomenon---<b>temporal oscillation</b>---where correct answers often emerge in the middle process, but are overwritten in later denoising steps.
+Diffusion large language models (dLLMs) generate text through iterative denoising, yet current decoding strategies discard rich intermediate predictions in favor of the final output. Our work here reveals a critical phenomenon, <b>temporal oscillation</b>, where correct answers often emerge in the middle process, but are overwritten in later denoising steps.
 To address this issue, we introduce two complementary methods that exploit temporal consistency: 
 - **Temporal Self-Consistency Voting**, a training-free, test-time decoding strategy that aggregates predictions across denoising steps to select the most consistent output; 
 - **Temporal Consistency Reinforcement**, a post-training method that uses Temporal Semantic Entropy (TSE), a measure of semantic stability across intermediate predictions, as a reward signal to encourage stable generations. 
@@ -58,7 +58,7 @@ If you find this work useful, please consider citing:
 @article{wang2025temporaldynamics,
     title={Time Is a Feature: Exploiting Temporal Dynamics in Diffusion Language Models},
     author={Wen, Wang and Bozhen, Fang and Chenchen, Jing and Yongliang, Shen and Yangyi, Shen and Qiuyu, Wang and Hao, Ouyang and Hao, Chen and Chunhua, Shen},
-    journal={arXiv preprint arXiv:},
+    journal={arXiv preprint arXiv:2508.09138},
     year={2025}
 }
 ```
