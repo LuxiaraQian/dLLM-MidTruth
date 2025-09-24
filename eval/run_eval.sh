@@ -14,7 +14,8 @@ token_per_step=2
 temperature=0.0
 
 # Model to be used for evaluation
-model_path="/mnt/nas/share/weights/LLaDA-8B-Instruct"
+model_path="/mnt/pfs/zitao_team/luxiaoqian/dLLM-MidTruth/LLaDA-8B-Instruct"
+model="LLaDA-8B-Instruct"
 
 # Vote Settings
 enable_vote=true
